@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Premium Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', currentTheme);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- particles canvas removed -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="images/logo.svg" alt="Fine Tech Logo" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="services.html" class="nav-link active">Our Services</a></li>
+            <li><a href="products.html" class="nav-link">Our Products</a></li>
+            <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+        </ul>
+
+        <div class="contact-wrapper">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <a href="contact.html" class="contact-btn">
+                <i data-lucide="phone" class="contact-icon"></i>
+                Contact
+            </a>
+            <div class="separator"></div>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <h1 class="section-title">Our Services</h1>
+        <div class="grid-3">
+            <div class="card">
+                <i data-lucide="settings" class="card-icon"></i>
+                <h3>CNC Turning</h3>
+                <p>CNC Turning Centers including Galaxy Midas 6, Galaxy Midas 0, and LMW LX20T L5.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="cpu" class="card-icon"></i>
+                <h3>Vertical Machining Centers</h3>
+                <p>3 VMCs from COSMOS and BFW with 4th-axis capability for high-speed milling and complex contouring.
+                </p>
+            </div>
+            <div class="card">
+                <i data-lucide="shield-check" class="card-icon"></i>
+                <h3>Quality Assurance</h3>
+                <p>Dedicated Quality Room with 10+ Mitutoyo tools, Digital Height Gauge, and Profile Projector for
+                    zero-defect output.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="zap" class="card-icon"></i>
+                <h3>Prototyping & SPM</h3>
+                <p>Specialists in developing prototype parts and Special Purpose Machines (SPMs) tailored to client
+                    needs.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="globe" class="card-icon"></i>
+                <h3>High-Mix, Low-Volume</h3>
+                <p>Optimized for export readiness and direct supply to the USA, Canada, France, and China.</p>
+            </div>
+            <div class="card">
+                <i data-lucide="users" class="card-icon"></i>
+                <h3>Supplier Chain Integration</h3>
+                <p>20 years of strong partnerships for Heat Treatment, Press Tools, Laser Cutting, and Finishing
+                    processes.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Fine Tech</h3>
+                    <p>Precision Engineering · ISO 9001:2015</p>
+                    <p style="margin-top: 10px; font-size: 0.9em; color: var(--text-muted);">
+                        <i data-lucide="phone"
+                            style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;"></i>
+                        +91-98457-56343 / +91-080-29908280<br>
+                        <i data-lucide="mail"
+                            style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;"></i>
+                        u.sivaprakash@finetechind.com
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="https://www.linkedin.com/company/finetechblr/" target="_blank">LinkedIn</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fine Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- particles script removed -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

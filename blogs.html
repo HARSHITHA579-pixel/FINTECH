@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | Premium Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', currentTheme);
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- particles canvas removed -->
+    <nav class="navbar">
+        <a href="index.html" class="logo-container">
+            <img src="images/logo.svg" alt="Fine Tech Logo" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="services.html" class="nav-link">Our Services</a></li>
+            <li><a href="products.html" class="nav-link">Our Products</a></li>
+            <li><a href="blogs.html" class="nav-link active">Blogs</a></li>
+        </ul>
+
+        <div class="contact-wrapper">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <a href="contact.html" class="contact-btn">
+                <i data-lucide="phone" class="contact-icon"></i>
+                Contact
+            </a>
+            <div class="separator"></div>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <h1 class="section-title">Latest Blogs</h1>
+        <div class="text-container">
+            <div class="card mb-4">
+                <h2 style="font-size: 1.5rem; margin-bottom: 10px; color: var(--text-main);">The Future of Web Design
+                </h2>
+                <p>Exploring trends and technologies shaping the digital landscape.</p>
+            </div>
+            <div class="card mb-4">
+                <h2 style="font-size: 1.5rem; margin-bottom: 10px; color: var(--text-main);">Precision Manufacturing
+                    Trends</h2>
+                <p>How Industry 4.0 is revolutionizing CNC machining and quality control.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Fine Tech</h3>
+                    <p>Delivering excellence in engineering and technology solutions. Your partner for innovation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="https://www.linkedin.com/company/finetechblr/" target="_blank">LinkedIn</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fine Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- particles script removed -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
